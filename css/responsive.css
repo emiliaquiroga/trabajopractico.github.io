@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+*{
+  font-family: 'Bayon', sans-serif;
+  color: #678D58;;
+  background-color: #F6E7CB;
+
+}
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px #678D58;
+  }
+  
+  .wrapper > * {
+    padding: 4px;
+    flex: 1 100%;
+    
+  }
+  
+  .header {
+    text-align: center;
+    font-size:15px;
+  
+  }
+  
+  .main {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  .aside-1 {
+    object-fit: cover;
+
+  }
+
+  .aside-2 {
+    object-fit: cover;
+  }
+  
+  
+  @media all and (min-width: 600px) {
+
+
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+
+    .main    { 
+      flex: 3 0px; 
+      
+    }
+    .aside-1 { 
+      order: 1; 
+    
+
+    } 
+    .main    { 
+      order: 2;
+      
+
+    }
+    .aside-2 { 
+      order: 3;
+     
+
+    }
+
+  }
+
+  @media all and (min-width: 1200px) {
+    .main    { 
+      flex: 3 0px; 
+
+    }
+
+    .aside-1 { 
+      order: 1; 
+     
+
+    } 
+
+    .main    { 
+      order: 2;
+
+
+     }
+
+    .aside-2 { 
+      order: 3; 
+      
+
+    }
+
+    .footer  { 
+      order: 4; 
+
+    }
+  }
+  
